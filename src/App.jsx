@@ -51,8 +51,10 @@ function FadeIn({ children, delay = 0, className = "" }) {
 // ── Section wrapper ────────────────────────────────────────────────────────
 function Section({ id, children, className = "" }) {
   return (
-    <section id={id} className={`py-20 px-6 max-w-5xl mx-auto ${className}`}>
-      {children}
+    <section id={id} style={{width:"100%"}} className={className}>
+      <div style={{maxWidth:"1024px", margin:"0 auto", padding:"80px 24px", textAlign:"center"}}>
+        {children}
+      </div>
     </section>
   );
 }
@@ -262,13 +264,13 @@ function About() {
       <SectionTitle label="Who I Am" title="About Me" />
       <FadeIn delay={100}>
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-slate-600 leading-relaxed mb-5">
+          <p style={{textAlign:"center"}} className="text-slate-600 leading-relaxed mb-5">
             I'm a software engineer and full-stack developer with a B.Tech in Electronics & Communication Engineering from GITAM University. My journey in tech is driven by a genuine curiosity for how software solves real problems — from designing intuitive web interfaces to building robust backend systems and intelligent ML pipelines.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-5">
+          <p style={{textAlign:"center"}} className="text-slate-600 leading-relaxed mb-5">
             I thrive at the intersection of engineering and creativity. Whether it's architecting a MERN-stack application, writing clean REST APIs, or training a deep-learning model to detect electrolyte imbalances from ECG signals, I care deeply about crafting solutions that are both technically sound and practically impactful.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p style={{textAlign:"center"}} className="text-slate-600 leading-relaxed">
             I've internship experience at DRDO, 100+ LeetCode problems under my belt, and a continuous drive to learn. I'm looking for opportunities where I can grow alongside talented teams and contribute meaningfully from day one.
           </p>
         </div>
