@@ -7,12 +7,21 @@
 body {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-.text-center {
+section {
+  text-align: center;
+}
+
+p, h1, h2, h3, span {
   text-align: center !important;
 }
 
-p {
-  text-align: center;
+.text-left {
+  text-align: left !important;
+}
+
+li {
+  text-align: left;
 }
